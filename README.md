@@ -69,7 +69,6 @@ Sidebar: navigation links to each CRUD section
 Content: main view area to render child pages
 
 🔷 CRUD Pages & Components
-For each entity, create:
 
 EntityPage: e.g., FabricsPage, LeathersPage, etc.
 
@@ -81,7 +80,6 @@ EntityForm: e.g., FabricForm, LeatherForm, etc.
 
 Modal or page for create/update form
 
-EntityTable: table/grid listing entity records with pagination and actions
 
 
 
