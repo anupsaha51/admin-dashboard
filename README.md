@@ -1,4 +1,4 @@
-### High-Level Architecture
+### Nike Material Workspace – High-Level Architecture
                       
                            +----------------------------+
                            |        Admin User          |
@@ -26,7 +26,7 @@
                                [Nike Databases & Services]
 
 
-+----------------------------------------------------------+
+
 |                       CI/CD Pipeline                     |
 |----------------------------------------------------------|
 | - Code Repository: GitHub                                |
@@ -34,32 +34,84 @@
 | - Unit/Integration Tests (Vite, React Testing Library)   |
 | - Build & Bundle React App (Webpack)                     |
 | - Deploy Frontend:Jenkins Job                            |
-+----------------------------------------------------------+
+
 
 
 
 ### Frontend Architecture (React)
 ✅ React + Vite for SPA
+
 ✅ React Router for route-based code splitting
+
 ✅ Redux Toolkit for global state
+
 ✅ Axios  Query for API data fetching
+
 ✅ Component Library Nike's EDS component
+
 ✅ Form management via React Hook Form
+
 ✅ Charting using Recharts
+
 ✅ Testing with Vite + React Testing Library
+
 
 
 ### Presentation Layer (React UI)
 
-components for:
+🔷 Layout Components
+DashboardLayout: main container with
 
-Dashboard Layout (Header, Sidebar, Content)
+Header: logo, user profile, logout
 
-Material Libraries
+Sidebar: navigation links to each CRUD section
 
-Material Inventory Tables
+Content: main view area to render child pages
 
-Admin User Management
+🔷 CRUD Pages & Components
+For each entity, create:
+
+EntityPage: e.g., FabricsPage, LeathersPage, etc.
+
+Shows table/grid of items
+
+Has “Add”, “Edit”, “Delete” buttons
+
+EntityForm: e.g., FabricForm, LeatherForm, etc.
+
+Modal or page for create/update form
+
+EntityTable: table/grid listing entity records with pagination and actions
+
+Entities you’ll cover:
+✅ Fabrics
+✅ Leathers
+✅ Colors
+✅ Styles
+✅ BOM (Bill of Materials)
+
+🔷 Admin User Management
+AdminUsersPage: list all admin users
+
+AdminUserForm: create/edit admin user
+
+AdminUserTable: display admin users with roles/status/actions
+
+🔷 Shared / Reusable Components
+Modal: confirmation dialogs, forms
+
+Notification/Toast: success/error messages
+
+Breadcrumbs: navigation aid inside the dashboard
+
+Loader/Spinner: for async operations
+
+🔷 Routing
+Use React Router to map paths to CRUD pages:
+
+/fabrics, /leathers, /colors, /styles, /bom
+
+/admin-users
 
 ### Authentication Layer (OktaAuth)
 
