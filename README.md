@@ -83,12 +83,7 @@ Modal or page for create/update form
 
 EntityTable: table/grid listing entity records with pagination and actions
 
-Entities you’ll cover:
-✅ Fabrics
-✅ Leathers
-✅ Colors
-✅ Styles
-✅ BOM (Bill of Materials)
+
 
 🔷 Admin User Management
 AdminUsersPage: list all admin users
